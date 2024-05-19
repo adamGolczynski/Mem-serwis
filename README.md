@@ -13,6 +13,22 @@ pnpm dev
 # or
 bun dev
 ```
+Second, install data-base JSON server:
+
+```bash
+npm install json-server -g
+# or
+yarn install json-server -g
+# or
+pnpm install json-server -g
+# or
+bun install json-server -g
+```
+
+Next, run data-base server on your computer:
+```bash
+json-server --watch --port 4000 ./_data/db.json
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
