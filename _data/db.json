@@ -8,7 +8,7 @@
 			"img": "/images/mem1.jpeg",
 			"favourite": true
 		},
-		{ "id": 2, "title": "Meme 2", "upvotes": 1, "downvotes": 2, "img": "/images/mem2.jpeg", "favourite": false },
+		{ "id": 2, "title": "Meme 2", "upvotes": 1, "downvotes": 2, "img": "/images/mem1.jpeg", "favourite": false },
 		{
 			"id": 3,
 			"title": "Meme 3",
