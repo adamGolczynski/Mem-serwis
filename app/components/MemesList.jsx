@@ -1,26 +1,27 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 async function getMemes() {
-	const res = await fetch(`http://localhost:4000/memes`);
+	const res = await fetch(`http://localhost:4000/memes`)
 
-	return res.json();
+	return res.json()
 }
 
 export default async function MemesList() {
-	const memes = await getMemes();
+	const memes = await getMemes()
 
 	return (
 		<>
 			<h3>Here are the funniest memes on earth!</h3>
 
-			{memes.map((meme) => (
+			{memes.map(meme => (
 				<div key={meme.id}>
 					<h4>{meme.title}</h4>
-					<img src={meme.img} />
+					<Image src={meme.img} alt={meme.title} width={300} height={300} quality={100} />
+
 					<p>Upvotes: {meme.upvotes}</p>
 					<p>Downvotes: {meme.downvotes}</p>
 				</div>
 			))}
 		</>
-	);
+	)
 }
