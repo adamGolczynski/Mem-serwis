@@ -3,96 +3,112 @@
 		"title": "Meme 1",
 		"upvotes": 6,
 		"downvotes": 0,
-		"img": "../public/images/mem1.jpeg"
+		"img": "../public/images/mem1.jpeg",
+		"favourite": true
 	},
 	{
 		"title": "Meme 2",
 		"upvotes": 1,
 		"downvotes": 2,
-		"img": "../public/images/mem2.jpeg"
+		"img": "../public/images/mem2.jpeg",
+		"favourite": false
 	},
 	{
 		"title": "Meme 3",
 		"upvotes": 15,
 		"downvotes": 3,
-		"img": "path/to/image3.png"
+		"img": "path/to/image3.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 4",
 		"upvotes": 8,
 		"downvotes": 1,
-		"img": "path/to/image4.png"
+		"img": "path/to/image4.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 5",
 		"upvotes": 23,
 		"downvotes": 4,
-		"img": "path/to/image5.png"
+		"img": "path/to/image5.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 6",
 		"upvotes": 10,
 		"downvotes": 5,
-		"img": "path/to/image6.png"
+		"img": "path/to/image6.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 7",
 		"upvotes": 7,
 		"downvotes": 0,
-		"img": "path/to/image7.png"
+		"img": "path/to/image7.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 8",
 		"upvotes": 20,
 		"downvotes": 2,
-		"img": "path/to/image8.png"
+		"img": "path/to/image8.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 9",
 		"upvotes": 10,
 		"downvotes": 5,
-		"img": "path/to/image9.png"
+		"img": "path/to/image9.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 10",
 		"upvotes": 8,
 		"downvotes": 4,
-		"img": "path/to/image10.png"
+		"img": "path/to/image10.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 11",
 		"upvotes": 7,
 		"downvotes": 2,
-		"img": "path/to/image11.png"
+		"img": "path/to/image11.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 12",
 		"upvotes": 6,
 		"downvotes": 2,
-		"img": "path/to/image12.png"
+		"img": "path/to/image12.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 13",
 		"upvotes": 5,
 		"downvotes": 1,
-		"img": "path/to/image13.png"
+		"img": "path/to/image13.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 14",
 		"upvotes": 9,
 		"downvotes": 5,
-		"img": "path/to/image14.png"
+		"img": "path/to/image14.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 15",
 		"upvotes": 4,
 		"downvotes": 0,
-		"img": "path/to/image15.png"
+		"img": "path/to/image15.png",
+		"favourite": false
 	},
 	{
 		"title": "Meme 16",
 		"upvotes": 6,
 		"downvotes": 2,
-		"img": "path/to/image16.png"
+		"img": "path/to/image16.png",
+		"favourite": false
 	}
 ]
