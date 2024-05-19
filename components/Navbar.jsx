@@ -20,6 +20,9 @@ export function Navbar() {
 			/>
 			<h3>Mem serwis</h3>
 			<Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>
+				Home
+			</Link>
+			<Link className={`link ${pathname === '/regular' ? 'active' : ''}`} href='/regular'>
 				Regular
 			</Link>
 			<Link className={`link ${pathname === '/hot' ? 'active' : ''}`} href='/hot'>
