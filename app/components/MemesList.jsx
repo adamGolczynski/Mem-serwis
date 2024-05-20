@@ -1,14 +1,8 @@
 import Image from 'next/image'
-
-async function getMemes() {
-	const res = await fetch(`http://localhost:4000/memes`)
-
-	return res.json()
-}
+import {FetchData} from '@/app/components/FetchData'
 
 export default async function MemesList() {
-	const memes = await getMemes()
-
+	const memes = await FetchData()
 	return (
 		<>
 			<h3>Here are the funniest memes on earth!</h3>
