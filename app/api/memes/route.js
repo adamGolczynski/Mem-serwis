@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import fs from 'fs';
 
-const memesFilePath = path.join(process.cwd(), 'app', 'data', 'memes.json');
+const memesFilePath = path.join(process.cwd(), 'app', 'data', 'db.json');
 
 export async function PATCH(request) {
 	try {
