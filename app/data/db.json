@@ -12,7 +12,7 @@
       "id": 2,
       "title": "Meme 2",
       "upvotes": 19,
-      "downvotes": 6,
+      "downvotes": 16,
       "img": "/images/mem1.jpeg",
       "favourite": false
     },
@@ -67,8 +67,8 @@
     {
       "id": 9,
       "title": "Meme 9",
-      "upvotes": 10,
-      "downvotes": 5,
+      "upvotes": 13,
+      "downvotes": 7,
       "img": "/images/mem1.jpeg",
       "favourite": false
     },
