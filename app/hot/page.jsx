@@ -1,4 +1,4 @@
-import HotMemesList from "../components/HotMemesList";
+import HotMemesList from '../components/HotMemesList'
 
 export default function Hot() {
 	return (
