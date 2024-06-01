@@ -1,11 +1,20 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Meme({ id, title, img, upvotes, downvotes }) {
 	const [memeUpvotes, setMemeUpvotes] = useState(upvotes);
 	const [memeDownvotes, setMemeDownvotes] = useState(downvotes);
+	const pathname = usePathname();
+
+    useEffect(() => {
+        setMemeUpvotes(upvotes);
+        setMemeDownvotes(downvotes);
+    }, [pathname, upvotes, downvotes]);
+
+
 	const handleUpvote = async () => {
 		try {
 			const response = await fetch('/api/memes', {

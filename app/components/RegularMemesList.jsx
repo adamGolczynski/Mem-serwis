@@ -3,6 +3,7 @@ import path from 'path'
 import Meme from './Meme'
 
 export default function RegularMemesList() {
+
 	const filePath = path.join(process.cwd(), 'app', 'data', 'db.json')
 	const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'))
 

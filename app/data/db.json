@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": "Meme 1",
-      "upvotes": 10,
-      "downvotes": 30,
+      "upvotes": 15,
+      "downvotes": 32,
       "img": "/images/mem1.jpeg",
       "favourite": true
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "title": "Meme 2",
       "upvotes": 19,
-      "downvotes": 2,
+      "downvotes": 6,
       "img": "/images/mem1.jpeg",
       "favourite": false
     },
@@ -27,8 +27,8 @@
     {
       "id": 4,
       "title": "Meme 4",
-      "upvotes": 8,
-      "downvotes": 1,
+      "upvotes": 14,
+      "downvotes": 8,
       "img": "/images/mem1.jpeg",
       "favourite": false
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "title": "Meme 6",
       "upvotes": 10,
-      "downvotes": 5,
+      "downvotes": 7,
       "img": "/images/mem1.jpeg",
       "favourite": false
     },
