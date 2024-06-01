@@ -1,18 +1,60 @@
-import fs from 'fs';
-import path from 'path';
+'use client';
+
+import { useState, useEffect } from 'react';
 import Meme from './Meme';
 
+const filterHotMemes = (memes) => {
+  return memes.filter((meme) => meme.upvotes - meme.downvotes >= 5);
+};
+
 export default function HotMemesList() {
-	const filePath = path.join(process.cwd(), 'app', 'data', 'db.json');
-	const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const [hotMemes, setHotMemes] = useState([]);
 
-	const hotMemes = jsonData.memes.filter((meme) => meme.upvotes - meme.downvotes >= 5);
+  useEffect(() => {
+    const fetchMemes = async () => {
+      try {
+        const response = await fetch('/api/memes');
+        const memes = await response.json();
+        setHotMemes(filterHotMemes(memes));
+      } catch (error) {
+        console.error('Error fetching memes:', error);
+      }
+    };
 
-	return (
-		<>
-			<h3>Here are the HOTTEST memes on earth!</h3>
+    fetchMemes();
+  }, []);
 
-			{hotMemes.length > 0 ? hotMemes.map((hotMeme) => <Meme key={hotMeme.id} id={hotMeme.id} title={hotMeme.title} img={hotMeme.img} upvotes={hotMeme.upvotes} downvotes={hotMeme.downvotes} />) : <p>No hot memes found.</p>}
-		</>
-	);
+  const updateHotMemes = (id, updatedUpvotes, updatedDownvotes) => {
+    setHotMemes((prevHotMemes) => {
+      const updatedMemes = prevHotMemes.map((meme) => {
+        if (meme.id === id) {
+          return { ...meme, upvotes: updatedUpvotes, downvotes: updatedDownvotes };
+        }
+        return meme;
+      });
+      return filterHotMemes(updatedMemes);
+    });
+  };
+
+  return (
+    <>
+      <h3>Here are the HOTTEST memes on earth!</h3>
+
+      {hotMemes.length > 0 ? (
+        hotMemes.map((hotMeme) => (
+          <Meme
+            key={hotMeme.id}
+            id={hotMeme.id}
+            title={hotMeme.title}
+            img={hotMeme.img}
+            upvotes={hotMeme.upvotes}
+            downvotes={hotMeme.downvotes}
+            updateHotMemes={updateHotMemes}
+          />
+        ))
+      ) : (
+        <p>No hot memes found.</p>
+      )}
+    </>
+  );
 }

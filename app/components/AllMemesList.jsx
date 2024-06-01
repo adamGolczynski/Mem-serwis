@@ -1,16 +1,56 @@
-import fs from 'fs';
-import path from 'path';
+'use client';
+
+import { useState, useEffect } from 'react';
 import Meme from './Meme';
 
 export default function AllMemesList() {
-	const filePath = path.join(process.cwd(), 'app', 'data', 'db.json');
-	const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const [allMemes, setAllMemes] = useState([]);
 
-	return (
-		<>
-			<h1>Here are the funniest memes on earth!</h1>
+  useEffect(() => {
+    const fetchMemes = async () => {
+      try {
+        const response = await fetch('/api/memes');
+        const memes = await response.json();
+        setAllMemes(memes);
+      } catch (error) {
+        console.error('Error fetching memes:', error);
+      }
+    };
 
-			{jsonData.memes.length > 0 ? jsonData.memes.map((meme) => <Meme key={meme.id} id={meme.id} title={meme.title} img={meme.img} upvotes={meme.upvotes} downvotes={meme.downvotes} />) : <p>No memes found.</p>}
-		</>
-	);
+    fetchMemes();
+  }, []);
+
+  const updateAllMemes = (id, updatedUpvotes, updatedDownvotes) => {
+    setAllMemes((prevAllMemes) => {
+      const updatedMemes = prevAllMemes.map((meme) => {
+        if (meme.id === id) {
+          return { ...meme, upvotes: updatedUpvotes, downvotes: updatedDownvotes };
+        }
+        return meme;
+      });
+      return updatedMemes;
+    });
+  };
+
+  return (
+    <>
+      <h1>Here are the funniest memes on earth!</h1>
+
+      {allMemes.length > 0 ? (
+        allMemes.map((meme) => (
+          <Meme
+            key={meme.id}
+            id={meme.id}
+            title={meme.title}
+            img={meme.img}
+            upvotes={meme.upvotes}
+            downvotes={meme.downvotes}
+            updateHotMemes={updateAllMemes}
+          />
+        ))
+      ) : (
+        <p>No memes found.</p>
+      )}
+    </>
+  );
 }
