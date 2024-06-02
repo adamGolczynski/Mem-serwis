@@ -55,7 +55,7 @@ export default function RegularMemesList() {
 						img={regularMeme.img}
 						upvotes={regularMeme.upvotes}
 						downvotes={regularMeme.downvotes}
-						updateHotMemes={updateRegularMemes}
+						updateRegularMemes={updateRegularMemes}
 					/>
 				))
 			) : (

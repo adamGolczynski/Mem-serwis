@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Meme 1",
       "upvotes": 38,
-      "downvotes": 33,
+      "downvotes": 34,
       "img": "/images/mem1.jpeg",
       "favourite": true
     },
@@ -19,15 +19,15 @@
     {
       "id": 3,
       "title": "Meme 3",
-      "upvotes": 15,
-      "downvotes": 14,
+      "upvotes": 19,
+      "downvotes": 15,
       "img": "/images/mem1.jpeg",
       "favourite": false
     },
     {
       "id": 4,
       "title": "Meme 4",
-      "upvotes": 29,
+      "upvotes": 30,
       "downvotes": 34,
       "img": "/images/mem1.jpeg",
       "favourite": false

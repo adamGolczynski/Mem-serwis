@@ -52,7 +52,7 @@ export default function AllMemesList() {
 							img={meme.img}
 							upvotes={meme.upvotes}
 							downvotes={meme.downvotes}
-							updateHotMemes={updateAllMemes}
+							updateAllMemes={updateAllMemes}
 						/>
 					))
 				) : (
