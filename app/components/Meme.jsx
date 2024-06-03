@@ -59,7 +59,7 @@ export default function Meme({ id, title, img, upvotes, downvotes, updateHotMeme
   return (
     <div key={id}>
       <h4>{title}</h4>
-      <Image src={img} alt={title} width={300} height={300} quality={100} />
+      <img src={img} alt={title} width={300} height={300} quality={100} />
       <p>Upvotes: {memeUpvotes}</p>
       <p>Downvotes: {memeDownvotes}</p>
       <div>

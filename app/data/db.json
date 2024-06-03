@@ -1,132 +1,130 @@
 {
-  "memes": [
-    {
-      "id": 1,
-      "title": "Meme 1",
-      "upvotes": 38,
-      "downvotes": 34,
-      "img": "/images/mem1.jpeg",
-      "favourite": true
-    },
-    {
-      "id": 2,
-      "title": "Meme 2",
-      "upvotes": 22,
-      "downvotes": 17,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 3,
-      "title": "Meme 3",
-      "upvotes": 19,
-      "downvotes": 15,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 4,
-      "title": "Meme 4",
-      "upvotes": 30,
-      "downvotes": 34,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 5,
-      "title": "Meme 5",
-      "upvotes": 23,
-      "downvotes": 19,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 6,
-      "title": "Meme 6",
-      "upvotes": 10,
-      "downvotes": 7,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 7,
-      "title": "Meme 7",
-      "upvotes": 7,
-      "downvotes": 3,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 8,
-      "title": "Meme 8",
-      "upvotes": 20,
-      "downvotes": 16,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 9,
-      "title": "Meme 9",
-      "upvotes": 13,
-      "downvotes": 9,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 10,
-      "title": "Meme 10",
-      "upvotes": 24,
-      "downvotes": 20,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 11,
-      "title": "Meme 11",
-      "upvotes": 7,
-      "downvotes": 3,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 12,
-      "title": "Meme 12",
-      "upvotes": 26,
-      "downvotes": 22,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 13,
-      "title": "Meme 13",
-      "upvotes": 26,
-      "downvotes": 2,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 14,
-      "title": "Meme 14",
-      "upvotes": 10,
-      "downvotes": 15,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 15,
-      "title": "Meme 15",
-      "upvotes": 8,
-      "downvotes": 0,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    },
-    {
-      "id": 16,
-      "title": "Meme 16",
-      "upvotes": 6,
-      "downvotes": 2,
-      "img": "/images/mem1.jpeg",
-      "favourite": false
-    }
-  ]
+	"memes": [
+		{
+			"id": 1,
+			"title": "Meme 1",
+			"upvotes": 38,
+			"downvotes": 34,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 2,
+			"title": "Meme 2",
+			"upvotes": 22,
+			"downvotes": 17,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 3,
+			"title": "Meme 3",
+			"upvotes": 19,
+			"downvotes": 15,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 4,
+			"title": "Meme 4",
+			"upvotes": 30,
+			"downvotes": 34,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 5,
+			"title": "Meme 5",
+			"upvotes": 23,
+			"downvotes": 19,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 6,
+			"title": "Meme 6",
+			"upvotes": 10,
+			"downvotes": 7,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 7,
+			"title": "Meme 7",
+			"upvotes": 7,
+			"downvotes": 3,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 8,
+			"title": "Meme 8",
+			"upvotes": 20,
+			"downvotes": 16,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 9,
+			"title": "Meme 9",
+			"upvotes": 13,
+			"downvotes": 9,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 10,
+			"title": "Meme 10",
+			"upvotes": 24,
+			"downvotes": 20,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 11,
+			"title": "Meme 11",
+			"upvotes": 7,
+			"downvotes": 3,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 12,
+			"title": "Meme 12",
+			"upvotes": 26,
+			"downvotes": 22,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 13,
+			"title": "Meme 13",
+			"upvotes": 26,
+			"downvotes": 2,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 14,
+			"title": "Meme 14",
+			"upvotes": 10,
+			"downvotes": 15,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 15,
+			"title": "Meme 15",
+			"upvotes": 8,
+			"downvotes": 0,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"id": 16,
+			"title": "Meme 16",
+			"upvotes": 6,
+			"downvotes": 2,
+			"img": "/images/mem1.jpeg"
+		},
+		{
+			"title": "funny",
+			"img": "https://plaky.com/blog/wp-content/uploads/2023/08/The-bell-curve.jpg",
+			"upvotes": 7,
+			"downvotes": 3,
+			"id": 17
+		},
+		{
+			"title": "cxds",
+			"img": "https://plaky.com/blog/wp-content/uploads/2023/08/The-bell-curve.jpg",
+			"upvotes": 5,
+			"downvotes": 0,
+			"id": 18
+		}
+	]
 }

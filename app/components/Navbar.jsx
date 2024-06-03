@@ -1,23 +1,17 @@
-'use client'
+'use client';
 
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
-import Image from 'next/image'
-import Logo from './mem_logo.png'
-import styles from './Navbar.module.css'
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import Logo from './mem_logo.png';
+import styles from './Navbar.module.css';
 
 export function Navbar() {
-	const pathname = usePathname()
+	const pathname = usePathname();
 
 	return (
 		<nav className={styles.navbar}>
-			<Image
-			src={Logo}
-			alt='Mem serwis logo'
-			width={70}
-			quality={100}
-			placeholder='blur'
-			/>
+			<Image src={Logo} alt='Mem serwis logo' width={70} quality={100} placeholder='blur' />
 			<h3>Mem serwis</h3>
 			<Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>
 				Home
@@ -31,9 +25,6 @@ export function Navbar() {
 			<Link className={`link ${pathname === '/formMem' ? 'active' : ''}`} href='/formMem'>
 				Add mem
 			</Link>
-			<Link className={`link ${pathname === '/favourites' ? 'active' : ''}`} href='/favourites'>
-				Your favourites
-			</Link>
 		</nav>
-	)
+	);
 }
