@@ -44,23 +44,25 @@ export default function RegularMemesList() {
 		<>
 			<h3>Here are the boring memes :/</h3>
 
-			{isLoading ? (
+			<Suspense fallback={<Loading />}>
+				{isLoading ? (
 					<Loading />
 				) : regularMemes.length > 0 ? (
-				regularMemes.map(regularMeme => (
-					<Meme
-						key={regularMeme.id}
-						id={regularMeme.id}
-						title={regularMeme.title}
-						img={regularMeme.img}
-						upvotes={regularMeme.upvotes}
-						downvotes={regularMeme.downvotes}
-						updateRegularMemes={updateRegularMemes}
-					/>
-				))
-			) : (
-				<p>No regular memes found.</p>
-			)}
+					regularMemes.map(regularMeme => (
+						<Meme
+							key={regularMeme.id}
+							id={regularMeme.id}
+							title={regularMeme.title}
+							img={regularMeme.img}
+							upvotes={regularMeme.upvotes}
+							downvotes={regularMeme.downvotes}
+							updateRegularMemes={updateRegularMemes}
+						/>
+					))
+				) : (
+					<p>No regular memes found.</p>
+				)}
+			</Suspense>
 		</>
 	)
 }

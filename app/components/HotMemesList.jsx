@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, Suspense} from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
 
@@ -44,23 +44,25 @@ export default function HotMemesList() {
 		<>
 			<h3>Here are the HOTTEST memes on earth!</h3>
 
-			{isLoading ? (
+			<Suspense fallback={<Loading />}>
+				{isLoading ? (
 					<Loading />
 				) : hotMemes.length > 0 ? (
-				hotMemes.map(hotMeme => (
-					<Meme
-						key={hotMeme.id}
-						id={hotMeme.id}
-						title={hotMeme.title}
-						img={hotMeme.img}
-						upvotes={hotMeme.upvotes}
-						downvotes={hotMeme.downvotes}
-						updateHotMemes={updateHotMemes}
-					/>
-				))
-			) : (
-				<p>No hot memes found.</p>
-			)}
+					hotMemes.map(hotMeme => (
+						<Meme
+							key={hotMeme.id}
+							id={hotMeme.id}
+							title={hotMeme.title}
+							img={hotMeme.img}
+							upvotes={hotMeme.upvotes}
+							downvotes={hotMeme.downvotes}
+							updateHotMemes={updateHotMemes}
+						/>
+					))
+				) : (
+					<p>No hot memes found.</p>
+				)}
+			</Suspense>
 		</>
 	)
 }

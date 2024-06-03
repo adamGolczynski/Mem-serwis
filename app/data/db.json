@@ -11,8 +11,8 @@
     {
       "id": 2,
       "title": "Meme 2",
-      "upvotes": 21,
-      "downvotes": 16,
+      "upvotes": 22,
+      "downvotes": 17,
       "img": "/images/mem1.jpeg",
       "favourite": false
     },
