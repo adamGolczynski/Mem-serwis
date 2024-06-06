@@ -1,6 +1,8 @@
 .footer {
-	background-color: #9c9797;
-	color: black;
+	font-size: 1.2rem;
+	padding: 3rem;
+	background-color: var(--creamy-white);
+	color: var(--dark-brown);
 	text-align: center;
-	padding: 40px;
+	box-shadow: 0 -0.03rem 1.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }

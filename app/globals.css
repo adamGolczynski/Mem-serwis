@@ -7,3 +7,15 @@
 * {
 	margin: 0;
 }
+
+html{
+	font-size: 62.5%;
+}
+/* colors palette */
+:root {
+    --orange: #e6c030;
+    --yellow: #efe66a;
+    --dark-brown: #271207;
+    --grey: #847770;
+    --creamy-white: #f3eae8;
+}
