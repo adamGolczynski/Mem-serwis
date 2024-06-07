@@ -42,7 +42,7 @@ export default function AddMeme() {
 
 	return (
 		<main className={styles.wrapper}>
-			<h2 className={`${styles.header}, ${alkatra.className}`}>You got any gems? Add it below!</h2>
+			<h2 className={`${styles.header} ${alkatra.className}`}>You got any gems? Add it below!</h2>
 			{formError && <p>{formError}</p>}
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.inputWrapper}>
