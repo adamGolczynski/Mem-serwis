@@ -2,6 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import styles from '@/app/components/AddMeme.module.css';
 
 export default function AddMeme() {
 	const {
@@ -26,6 +27,7 @@ export default function AddMeme() {
 			if (response.ok) {
 				const newMeme = await response.json();
 				setMemes([...memes, newMeme]);
+				alert('Your meme was added! :) You can see it on the home page');
 				reset();
 			} else {
 				setFormError('Failed to add meme');
@@ -37,30 +39,24 @@ export default function AddMeme() {
 	};
 
 	return (
-		<div>
-			<h2>Add Meme</h2>
+		<main className={styles.wrapper}>
+			<h2 className={styles.header}>You got any gems? Add it below!</h2>
 			{formError && <p>{formError}</p>}
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<div>
-					<label htmlFor='title'>Title:</label>
-					<input type='text' id='title' {...register('title', { required: 'Title is required' })} />
+				<div className={styles.inputWrapper}>
+					<input className={styles.input} type='text' placeholder='Title of the meme' {...register('title', { required: 'Title is required' })} />
 					{errors.title && <span>{errors.title.message}</span>}
 				</div>
-				<div>
-					<label htmlFor='img'>Image URL:</label>
-					<input type='text' id='img' {...register('img', { required: 'Image URL is required' })} />
+				<div className={styles.inputWrapper}>
+					<input className={styles.input} type='text' placeholder='Meme image URL' {...register('img', { required: 'Image URL is required' })} />
 					{errors.img && <span>{errors.img.message}</span>}
 				</div>
-				<button type='submit'>Add Meme</button>
+				<div className={styles.buttonWrapper}>
+					<button className={styles.buttonAdd} type='submit'>
+						Add Meme
+					</button>
+				</div>
 			</form>
-			<div>
-				{memes.map((meme) => (
-					<div key={meme.id}>
-						<h4>{meme.title}</h4>
-						<img src={meme.img} alt={meme.title} />
-					</div>
-				))}
-			</div>
-		</div>
+		</main>
 	);
 }

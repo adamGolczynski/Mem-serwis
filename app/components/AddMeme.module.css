@@ -1,0 +1,40 @@
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	padding: 5rem 0 3rem 0;
+}
+
+.inputWrapper {
+	margin: 20px;
+}
+
+.input {
+	padding: 1rem 1rem 1rem 2rem;
+	border-radius: 2rem;
+}
+
+.buttonAdd {
+	text-align: center;
+	background-color: var(--orange);
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+	border-radius: 2rem;
+	border: none;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.buttonAdd:hover {
+	cursor: pointer;
+	background-color: var(--yellow);
+}
+
+.buttonWrapper {
+	display: flex;
+	justify-content: center;
+}
