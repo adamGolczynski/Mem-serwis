@@ -1,5 +1,4 @@
 'use client';
-import { Alkatra } from 'next/font/google';
 
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
