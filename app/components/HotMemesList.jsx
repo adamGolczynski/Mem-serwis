@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, Suspense } from 'react'
+import { useState, useEffect} from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
 
@@ -44,7 +44,6 @@ export default function HotMemesList() {
 		<>
 			<h3>Here are the HOTTEST memes on earth!</h3>
 
-			<Suspense fallback={<Loading />}>
 				{isLoading ? (
 					<Loading />
 				) : hotMemes.length > 0 ? (
@@ -62,7 +61,6 @@ export default function HotMemesList() {
 				) : (
 					<p>No hot memes found.</p>
 				)}
-			</Suspense>
 		</>
 	)
 }

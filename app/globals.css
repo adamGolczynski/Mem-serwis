@@ -1,11 +1,9 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
 	box-sizing: border-box;
-}
-
-* {
-	margin: 0;
 }
 
 html{
@@ -21,7 +19,10 @@ body{
     /* colors palette */
     --orange: #e6c030;
     --yellow: #efe66a;
+    --dark90: #080202;
+    --dark80: #333333;
     --dark-brown: #271207;
+    --medium-brown: #4D2410;
     --grey: #847770;
     --creamy-white: #f3eae8;
 }
