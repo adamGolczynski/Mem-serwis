@@ -1,10 +1,10 @@
 import HotMemesList from '../components/HotMemesList'
+import styles from '@/app/page.module.css'
 
 export default function Hot() {
 	return (
-		<main>
-			<h2>Hot</h2>
+		<>
 			<HotMemesList />
-		</main>
+		</>
 	)
 }

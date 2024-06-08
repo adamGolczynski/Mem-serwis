@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
+import styles from '@/app/components/Lists.module.css'
 
 export default function AllMemesList() {
 	const [allMemes, setAllMemes] = useState([])
@@ -37,26 +38,25 @@ export default function AllMemesList() {
 	}
 
 	return (
-		<>
-			<h1>Here are the funniest memes on earth!</h1>
-
-				{isLoading ? (
-					<Loading />
-				) : allMemes.length > 0 ? (
-					allMemes.map(meme => (
-						<Meme
-							key={meme.id}
-							id={meme.id}
-							title={meme.title}
-							img={meme.img}
-							upvotes={meme.upvotes}
-							downvotes={meme.downvotes}
-							updateAllMemes={updateAllMemes}
-						/>
-					))
-				) : (
-					<p>No memes found.</p>
-				)}
-		</>
+		<main className={styles.listContainer}>
+			<h1 className={styles.listTitle}>Here are the funniest memes on earth!</h1>
+			{isLoading ? (
+				<Loading />
+			) : allMemes.length > 0 ? (
+				allMemes.map(meme => (
+					<Meme
+						key={meme.id}
+						id={meme.id}
+						title={meme.title}
+						img={meme.img}
+						upvotes={meme.upvotes}
+						downvotes={meme.downvotes}
+						updateAllMemes={updateAllMemes}
+					/>
+				))
+			) : (
+				<p>No memes found.</p>
+			)}
+		</main>
 	)
 }

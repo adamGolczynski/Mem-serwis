@@ -1,0 +1,8 @@
+.listContainer{
+	min-height: 100vh;
+}
+
+.listTitle{
+    text-align: center;
+    font-size: 2rem;
+}

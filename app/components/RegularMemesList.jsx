@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
+import styles from '@/app/components/Lists.module.css'
 
 const filterRegularMemes = memes => {
 	return memes.filter(meme => meme.upvotes - meme.downvotes < 5)
@@ -41,9 +42,8 @@ export default function RegularMemesList() {
 	}
 
 	return (
-		<>
-			<h3>Here are the boring memes :/</h3>
-
+		<main className={styles.listContainer}>
+		<h2 className={styles.listTitle}>Here are the boring memes :/</h2>
 				{isLoading ? (
 					<Loading />
 				) : regularMemes.length > 0 ? (
@@ -61,6 +61,6 @@ export default function RegularMemesList() {
 				) : (
 					<p>No regular memes found.</p>
 				)}
-		</>
+		</main>
 	)
 }

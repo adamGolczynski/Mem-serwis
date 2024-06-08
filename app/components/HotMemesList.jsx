@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
+import styles from '@/app/components/Lists.module.css'
 
 const filterHotMemes = memes => {
 	return memes.filter(meme => meme.upvotes - meme.downvotes >= 5)
@@ -41,9 +42,8 @@ export default function HotMemesList() {
 	}
 
 	return (
-		<>
-			<h3>Here are the HOTTEST memes on earth!</h3>
-
+		<main className={styles.listContainer}>
+		<h1 className={styles.listTitle}>There are the HOTTEST MEMES!</h1>
 				{isLoading ? (
 					<Loading />
 				) : hotMemes.length > 0 ? (
@@ -61,6 +61,6 @@ export default function HotMemesList() {
 				) : (
 					<p>No hot memes found.</p>
 				)}
-		</>
+		</main>
 	)
 }
