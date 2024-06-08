@@ -1,4 +1,5 @@
 .navBar {
+	min-width: 32.6rem;
 	height: 6rem;
 	background-color: var(--orange);
 	display: flex;

@@ -11,8 +11,14 @@
 html{
 	font-size: 62.5%;
 }
-/* colors palette */
+body{
+    min-width: 37rem;
+    min-height: 100vh;
+    background-color: var(--creamy-white);
+}
+
 :root {
+    /* colors palette */
     --orange: #e6c030;
     --yellow: #efe66a;
     --dark-brown: #271207;
