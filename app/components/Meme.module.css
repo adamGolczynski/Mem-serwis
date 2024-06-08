@@ -105,13 +105,13 @@
 		width: 50%;
 	}
 	.title {
-		font-size: 3rem;
+		font-size: 2.6rem;
 	}
 	.buttonsWrapper {
 		width: 50%;
 	}
 	.button {
-		font-size: 3rem;
+		font-size: 2.6rem;
 	}
 }
 @media (min-width: 1200px) {
@@ -119,13 +119,13 @@
 		width: 40%;
 	}
 	.title {
-		font-size: 3.2rem;
+		font-size: 2.8rem;
 	}
 	.buttonsWrapper {
 		width: 40%;
 	}
 	.button {
-		font-size: 3.2rem;
+		font-size: 2.8rem;
 	}
 }
 @media (min-width: 1400px) {
@@ -133,12 +133,12 @@
 		width: 30%;
 	}
 	.title {
-		font-size: 3.4rem;
+		font-size: 3rem;
 	}
 	.buttonsWrapper {
 		width: 30%;
 	}
 	.button {
-		font-size: 3.4rem;
+		font-size: 3rem;
 	}
 }

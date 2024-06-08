@@ -2,98 +2,98 @@
   "memes": [
     {
       "id": 1,
-      "title": "Meme 1",
-      "upvotes": 38,
-      "downvotes": 35,
+      "title": "Does your dog bite?",
+      "upvotes": 39,
+      "downvotes": 36,
       "img": "/images/mem1.jpeg"
     },
     {
       "id": 2,
-      "title": "Meme 2",
+      "title": "Gaussian distribution",
       "upvotes": 22,
       "downvotes": 18,
       "img": "/images/mem2.jpeg"
     },
     {
       "id": 3,
-      "title": "Meme 3",
+      "title": "Regret",
       "upvotes": 19,
       "downvotes": 15,
       "img": "/images/mem3.jpg"
     },
     {
       "id": 4,
-      "title": "Meme 4",
+      "title": "Happy face",
       "upvotes": 30,
       "downvotes": 34,
       "img": "/images/mem4.jpg"
     },
     {
       "id": 5,
-      "title": "Meme 5",
+      "title": "Casual programmer's day",
       "upvotes": 23,
       "downvotes": 19,
       "img": "/images/mem5.jpg"
     },
     {
       "id": 6,
-      "title": "Meme 6",
+      "title": "That eight extra minutes of sleep",
       "upvotes": 10,
       "downvotes": 7,
       "img": "/images/mem6.jpeg"
     },
     {
       "id": 7,
-      "title": "Meme 7",
+      "title": "Junior vs Senior",
       "upvotes": 8,
       "downvotes": 6,
       "img": "/images/mem7.jpg"
     },
     {
       "id": 8,
-      "title": "Meme 8",
+      "title": "Just cats",
       "upvotes": 20,
       "downvotes": 16,
       "img": "/images/mem8.jpg"
     },
     {
       "id": 9,
-      "title": "Meme 9",
+      "title": "On time, but the price was high",
       "upvotes": 13,
       "downvotes": 10,
       "img": "/images/mem9.jpg"
     },
     {
       "id": 10,
-      "title": "Meme 10",
+      "title": "Facing reality",
       "upvotes": 24,
       "downvotes": 20,
       "img": "/images/mem10.jpg"
     },
     {
       "id": 11,
-      "title": "Meme 11",
+      "title": "Front camera is not ok",
       "upvotes": 7,
       "downvotes": 3,
       "img": "/images/mem11.jpg"
     },
     {
       "id": 12,
-      "title": "Meme 12",
+      "title": "Bugs found",
       "upvotes": 26,
       "downvotes": 22,
       "img": "/images/mem12.png"
     },
     {
       "id": 13,
-      "title": "Meme 13",
+      "title": "What we really do",
       "upvotes": 26,
       "downvotes": 2,
       "img": "/images/mem13.jpg"
     },
     {
       "id": 14,
-      "title": "Meme 14",
+      "title": "Only God knows",
       "upvotes": 11,
       "downvotes": 15,
       "img": "/images/mem14.jpg"
