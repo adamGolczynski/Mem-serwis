@@ -8,6 +8,7 @@
 }
 
 .title {
+	font-family: var(--font-alkatra), sans-serif;
 	font-size: 2.4rem;
 	font-weight: normal;
 	position: relative;
@@ -18,27 +19,24 @@
 .imageWrapper {
 	display: block;
 	width: 45%;
-	height: 100%;
+	margin-top: 2.4rem;
 	border-radius: 0.8rem;
 	overflow: hidden;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -10px 10px 10px gray;
-	margin-top: 2.4rem;
 }
 
 .image {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
+	vertical-align: bottom;
 }
 
 .buttonsWrapper {
-	margin-top: 1.6rem;
 	width: 45%;
+	margin-top: 1.6rem;
 }
 
 .button {
-	font-family: var(--font-alkatra);
+	font-family: var(--font-alkatra), sans-serif;
 	font-size: 2.4rem;
 	color: var(--dark-brown);
 	width: 50%;
@@ -49,8 +47,8 @@
 }
 
 .button:hover {
-	cursor: pointer;
 	color: var(--orange);
+	cursor: pointer;
 }
 
 .icon {
