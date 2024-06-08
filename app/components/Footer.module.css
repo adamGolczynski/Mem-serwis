@@ -13,3 +13,12 @@
 	font-size: 1.8rem;
 	color: var(--dark-brown);
 }
+
+@media (min-width: 1200px) {
+	.footer {
+		font-size: 1.6rem;
+	}
+	.icon {
+		font-size: 2.2rem;
+	}
+}
