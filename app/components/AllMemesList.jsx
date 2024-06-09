@@ -5,6 +5,7 @@ import Meme from './Meme'
 import Loading from '@/app/components/Loading'
 import styles from '@/app/components/Lists.module.css'
 import { caveat } from '../font/font';
+import NotMemesFound from './NotMemesFound'
 
 export default function AllMemesList() {
 	const [allMemes, setAllMemes] = useState([])
@@ -56,7 +57,7 @@ export default function AllMemesList() {
 					/>
 				))
 			) : (
-				<p>No memes found.</p>
+				<NotMemesFound />
 			)}
 		</main>
 	)

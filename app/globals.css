@@ -10,7 +10,6 @@ html{
 	font-size: 62.5%;
 }
 body{
-    min-width: 37rem;
     min-height: 100vh;
     background-color: var(--creamy-white);
 }

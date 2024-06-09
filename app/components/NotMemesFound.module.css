@@ -1,0 +1,28 @@
+.notFoundWrapper {
+	min-height: 100vh;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.notFoundTitle {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.notFoundImage {
+	width: 50vw;
+	height: 30vh;
+	background-image: url('/images/duck_NotFoundList.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.notFoundText {
+	padding: 4rem 0;
+	text-align: center;
+	font-size: 4rem;
+}

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from './mem_logo.png'
+import Logo from '@/public/images/mem_logo.png'
 import styles from './Navbar.module.css'
 import { usePathname } from 'next/navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

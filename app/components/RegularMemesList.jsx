@@ -5,6 +5,7 @@ import Meme from './Meme'
 import Loading from '@/app/components/Loading'
 import styles from '@/app/components/Lists.module.css'
 import { caveat } from '../font/font';
+import NotMemesFound from './NotMemesFound'
 
 const filterRegularMemes = memes => {
 	return memes.filter(meme => meme.upvotes - meme.downvotes < 5)
@@ -60,7 +61,7 @@ export default function RegularMemesList() {
 						/>
 					))
 				) : (
-					<p>No regular memes found.</p>
+					<NotMemesFound />
 				)}
 		</main>
 	)
