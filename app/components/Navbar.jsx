@@ -1,12 +1,23 @@
 'use client'
+// Hooks
+import { usePathname } from 'next/navigation'
+
+// Components
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '@/public/images/mem_logo.png'
+
+// Styles
 import styles from './Navbar.module.css'
-import { usePathname } from 'next/navigation'
+
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
+
+// Fonts
 import { alkatra, caveat } from '../font/font';
+
+// Images
+import Logo from '@/public/images/mem_logo.png'
 
 export function Navbar() {
 	const pathname = usePathname()

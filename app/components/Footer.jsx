@@ -1,4 +1,7 @@
+// Styles
 import styles from '@/app/components/Footer.module.css'
+
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 

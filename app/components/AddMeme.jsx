@@ -1,10 +1,13 @@
 'use client';
-
+// Hooks
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+
+// Styles
 import styles from '@/app/components/AddMeme.module.css';
-import { alkatra, caveat  } from '../font/font';
-import Loading from './Loading';
+
+// Fonts
+import { caveat } from '../font/font';
 
 export default function AddMeme() {
 	const {

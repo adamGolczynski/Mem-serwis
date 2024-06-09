@@ -1,11 +1,17 @@
 'use client'
-
+// Hooks
 import { useState, useEffect } from 'react'
+
+// Components
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
-import styles from '@/app/components/Lists.module.css'
-import { caveat } from '../font/font';
 import NotMemesFound from './NotMemesFound'
+
+// Styles
+import styles from '@/app/components/Lists.module.css'
+
+// Fonts
+import { caveat } from '../font/font';
 
 const filterHotMemes = memes => {
 	return memes.filter(meme => meme.upvotes - meme.downvotes >= 5)

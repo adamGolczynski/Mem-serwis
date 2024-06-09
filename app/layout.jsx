@@ -1,15 +1,15 @@
-// style
+// Components
+import { Navbar } from './components/Navbar';
+import Footer from '@/app/components/Footer';
+
+// Style
 import './globals.css';
 
-// fonts
+// Fonts
 import { Inter } from 'next/font/google';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import Font Awesome styles
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
-
-// components
-import { Navbar } from './components/Navbar';
-import Footer from '@/app/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -1,10 +1,14 @@
 'use client';
-
+// Hooks
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+
+// Styles
+import styles from '@/app/components/Meme.module.css';
+
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
-import styles from '@/app/components/Meme.module.css';
 
 export default function Meme({ id, title, img, upvotes, downvotes, updateHotMemes, updateRegularMemes, updateAllMemes }) {
 	const [memeUpvotes, setMemeUpvotes] = useState(upvotes);
