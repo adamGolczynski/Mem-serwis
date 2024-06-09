@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
 import styles from '@/app/components/Lists.module.css'
+import { caveat } from '../font/font';
 
 const filterHotMemes = memes => {
 	return memes.filter(meme => meme.upvotes - meme.downvotes >= 5)
@@ -42,8 +43,8 @@ export default function HotMemesList() {
 	}
 
 	return (
-		<main className={styles.listContainer}>
-		<h1 className={styles.listTitle}>There are the HOTTEST MEMES!</h1>
+		<main className={`${styles.listContainer} ${caveat.className}`}>
+		<h1 className={styles.listTitle}>Dear memes! Stop showing off… We know you're HOT!</h1>
 				{isLoading ? (
 					<Loading />
 				) : hotMemes.length > 0 ? (

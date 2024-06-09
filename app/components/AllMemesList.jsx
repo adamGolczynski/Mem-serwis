@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
 import styles from '@/app/components/Lists.module.css'
+import { caveat } from '../font/font';
 
 export default function AllMemesList() {
 	const [allMemes, setAllMemes] = useState([])
@@ -38,8 +39,8 @@ export default function AllMemesList() {
 	}
 
 	return (
-		<main className={styles.listContainer}>
-			<h1 className={styles.listTitle}>Here are the funniest memes on earth!</h1>
+		<main className={`${styles.listContainer} ${caveat.className}`}>
+			<h1 className={styles.listTitle}>Success is not the key to happiness. Memes are!</h1>
 			{isLoading ? (
 				<Loading />
 			) : allMemes.length > 0 ? (

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { alkatra } from '../font/font';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import styles from '@/app/components/Meme.module.css';
@@ -60,7 +59,7 @@ export default function Meme({ id, title, img, upvotes, downvotes, updateHotMeme
 	};
 
 	return (
-		<div className={`${styles.wrapper} ${alkatra.className}`} key={id}>
+		<div className={styles.wrapper} key={id}>
 			<h3 className={styles.title}>{title}</h3>
 			<div className={styles.imageWrapper}>
 				<img className={styles.image} src={img} alt={title} />

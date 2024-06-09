@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import styles from '@/app/components/AddMeme.module.css';
-import { alkatra } from '../font/font';
+import { alkatra, caveat  } from '../font/font';
 
 export default function AddMeme() {
 	const {
@@ -41,7 +41,7 @@ export default function AddMeme() {
 
 	return (
 		<main className={styles.wrapper}>
-			<h2 className={`${styles.header} ${alkatra.className}`}>You got any gems? Add it below!</h2>
+			<h2 className={`${styles.header} ${caveat.className}`}>You got any gems? Add it below!</h2>
 			{formError && <p>{formError}</p>}
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.inputWrapper}>

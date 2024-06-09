@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Meme from './Meme'
 import Loading from '@/app/components/Loading'
 import styles from '@/app/components/Lists.module.css'
+import { caveat } from '../font/font';
 
 const filterRegularMemes = memes => {
 	return memes.filter(meme => meme.upvotes - meme.downvotes < 5)
@@ -42,8 +43,8 @@ export default function RegularMemesList() {
 	}
 
 	return (
-		<main className={styles.listContainer}>
-		<h2 className={styles.listTitle}>Here are the boring memes :/</h2>
+		<main className={`${styles.listContainer} ${caveat.className}`}>
+		<h2 className={styles.listTitle}>Here you can find memes which have a lots of hidden talents!</h2>
 				{isLoading ? (
 					<Loading />
 				) : regularMemes.length > 0 ? (

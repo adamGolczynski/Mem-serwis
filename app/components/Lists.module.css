@@ -3,6 +3,20 @@
 }
 
 .listTitle{
+    font-family: var(--font-caveat), sans-serif;
+    font-size: 3rem;
+    padding: 2rem 1rem;
     text-align: center;
-    font-size: 2rem;
+    color: var(--dark-brown);
+}
+
+@media (min-width: 500px) {
+    .listTitle{
+        padding: 2rem 2rem;
+    }
+}
+@media (min-width: 1400px) {
+    .listTitle{
+        font-size: 3.8rem;
+    }
 }
