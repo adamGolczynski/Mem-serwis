@@ -11,14 +11,14 @@
       "id": 2,
       "title": "Gaussian distribution",
       "upvotes": 26,
-      "downvotes": 21,
+      "downvotes": 22,
       "img": "/images/mem2.jpeg"
     },
     {
       "id": 3,
       "title": "Regret",
       "upvotes": 20,
-      "downvotes": 15,
+      "downvotes": 16,
       "img": "/images/mem3.jpg"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "id": 11,
-      "title": "Front camera is not ok",
-      "upvotes": 7,
+      "title": "We all love summer",
+      "upvotes": 8,
       "downvotes": 3,
       "img": "/images/mem11.jpg"
     },

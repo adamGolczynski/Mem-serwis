@@ -7,7 +7,7 @@
 	justify-content: flex-end;
 	align-items: center;
 	background-color: var(--creamy-white);
-	box-shadow: 0 -0.03rem 1.5rem 0.5rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0 -0.03rem 1.5rem 0.5rem rgba(0, 0, 0, 0.2);
 	z-index: 20;
 }
 
@@ -88,11 +88,12 @@
 		right: -100%;
 		z-index: 2;
 		width: 30rem;
-		backdrop-filter: blur(1rem);
+		background-color: rgba(280, 280, 280, 0.2);
+		backdrop-filter: blur(2.5rem);
 		box-shadow: -0.5rem 0 0.5rem rgba(182, 179, 179, 0.979);
 		transition: right 0.8s ease-out;
 	}
-	@supports not ((backdrop-filter: blur(1rem))) {
+	@supports not ((backdrop-filter: blur(2.5rem))) {
 		.sidebar {
 			background-color: rgba(280, 280, 280, 0.9);
 		}
@@ -103,6 +104,7 @@
 		width: 100%;
 		padding: 2rem 3rem;
 		justify-content: center;
+		color: var(--dark90);
 	}
 	.link:not(.homeLinkLogo):hover::after,
 	.link.active::after {
