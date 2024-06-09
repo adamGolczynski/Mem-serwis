@@ -1,0 +1,30 @@
+.loadingWrapper {
+	min-height: 100vh;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.loadingTitle {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.loadingImage {
+	width: 80vw;
+	height: auto;
+}
+
+@media (min-width: 900px) {
+	.loadingImage {
+		width: 60vw;
+	}
+}
+
+@media (min-width: 1400px) {
+	.loadingImage {
+		width: 40vw;
+	}
+}

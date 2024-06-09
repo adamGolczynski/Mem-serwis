@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import styles from '@/app/components/AddMeme.module.css';
 import { alkatra, caveat  } from '../font/font';
+import Loading from './Loading';
 
 export default function AddMeme() {
 	const {

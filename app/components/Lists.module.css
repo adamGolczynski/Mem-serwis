@@ -15,8 +15,14 @@
         padding: 2rem 2rem;
     }
 }
+@media (min-width: 800px) {
+    .listTitle{
+        font-size: 3.5rem;
+    }
+}
 @media (min-width: 1400px) {
     .listTitle{
         font-size: 3.8rem;
     }
 }
+
