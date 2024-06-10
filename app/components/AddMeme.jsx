@@ -49,15 +49,15 @@ export default function AddMeme() {
 			{formError && <p>{formError}</p>}
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.inputWrapper}>
-					<input className={styles.input} type='text' placeholder='Title of the meme' {...register('title', { required: 'Title is required' })} />
+					<input className={`${styles.input} ${caveat.className}`} type='text' placeholder='Title of the meme' {...register('title', { required: 'Title is required' })} />
 					{errors.title && <span>{errors.title.message}</span>}
 				</div>
 				<div className={styles.inputWrapper}>
-					<input className={styles.input} type='text' placeholder='Meme image URL' {...register('img', { required: 'Image URL is required' })} />
+					<input className={`${styles.input} ${caveat.className}`} type='text' placeholder='Meme image URL' {...register('img', { required: 'Image URL is required' })} />
 					{errors.img && <span>{errors.img.message}</span>}
 				</div>
 				<div className={styles.buttonWrapper}>
-					<button className={styles.buttonAdd} type='submit'>
+					<button className={`${styles.buttonAdd} ${caveat.className}`} type='submit'>
 						Add Meme
 					</button>
 				</div>
