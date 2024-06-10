@@ -19,7 +19,7 @@ import { alkatra, caveat } from '../font/font';
 // Images
 import Logo from '@/public/images/mem_logo.png'
 
-export function Navbar() {
+export default function Navbar() {
 	const pathname = usePathname()
 
 	return (
