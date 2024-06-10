@@ -3,15 +3,15 @@
     {
       "id": 1,
       "title": "Does your dog bite?",
-      "upvotes": 39,
-      "downvotes": 37,
+      "upvotes": 42,
+      "downvotes": 38,
       "img": "/images/mem1.jpeg"
     },
     {
       "id": 2,
       "title": "Gaussian distribution",
       "upvotes": 26,
-      "downvotes": 22,
+      "downvotes": 23,
       "img": "/images/mem2.jpeg"
     },
     {
@@ -97,6 +97,13 @@
       "upvotes": 11,
       "downvotes": 15,
       "img": "/images/mem14.jpg"
+    },
+    {
+      "title": "Don't duck with me",
+      "img": "https://i.imgflip.com/6gy8el.jpg",
+      "upvotes": 0,
+      "downvotes": 0,
+      "id": 15
     }
   ]
 }
